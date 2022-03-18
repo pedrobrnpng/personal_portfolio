@@ -8,7 +8,7 @@ export default function LandingScreen() {
   return (
     <div
       id="#"
-      className="mx-auto flex h-screen max-w-lg flex-col items-start justify-center px-4 py-8 lg:max-w-screen-xl lg:flex-row lg:items-center lg:justify-center"
+      className="mx-auto flex h-screen max-w-lg flex-col items-start justify-center px-6 py-8 lg:max-w-screen-xl lg:flex-row lg:items-center lg:justify-center"
     >
       <div className="lg:order-2 ">
         <Illustration />
