@@ -11,6 +11,7 @@ module.exports = {
         'brown-beaver': '#C59176',
       },
     },
+    fontFamily: { league: 'League\\ Spartan', space: 'Space\\ Mono' },
   },
   plugins: [],
 };
