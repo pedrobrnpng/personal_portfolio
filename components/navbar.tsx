@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <nav className="container fixed top-0 left-0 z-50 w-screen">
       {!isOpen && (
-        <div className="flex w-screen items-center justify-between px-4 py-8">
+        <div className="flex w-screen items-center justify-between px-6 py-8">
           <div className="flex justify-start">
             <svg
               width="75"
