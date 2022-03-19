@@ -1,13 +1,12 @@
 import { AiOutlineLink } from 'react-icons/ai';
 import { Illustration } from '../components/illustration';
-import Layout from '../components/layout';
 import { LinkIcon } from '../components/LinkIcon';
 import SocialIcons from '../components/social-icons';
 
 export default function ContactSection() {
   return (
-    <div
-      id="#contact"
+    <section
+      id="contact"
       className="sticky bottom-0 z-10 flex min-h-screen items-center justify-center bg-brown-beaver"
     >
       <div className="mx-4 my-4 flex flex-col items-center bg-dark-purple py-8 px-6 lg:flex-row lg:px-16">
@@ -33,6 +32,6 @@ export default function ContactSection() {
           <Illustration />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

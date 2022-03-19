@@ -31,7 +31,7 @@ export default function AboutMe() {
   ];
 
   return (
-    <Layout id="#aboutme">
+    <Layout>
       <SectionTitle title="About Me" />
       <div className="lg:flex lg:flex-row">
         <div className="lg:w-2/3">
