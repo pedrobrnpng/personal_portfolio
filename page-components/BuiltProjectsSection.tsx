@@ -28,18 +28,15 @@ export default function BuiltProjectsSection() {
   ];
 
   return (
-    <Layout>
-      <SectionTitle title="Built Projects" />
-      <ul className="flex flex-col">
-        {data.map((proj, index) => {
-          return <ProjectCard {...proj} />;
-        })}
-      </ul>
-      {/* <div className="flex flex-col ">
-        {data.map((proj, index) => {
-          return <ProjectCard {...proj} />;
-        })}
-      </div> */}
+    <Layout id="work">
+      <div className="relative">
+        <SectionTitle title="Built Projects" />
+        <ul role="list" className="flex flex-col">
+          {data.map((proj, index) => {
+            return <ProjectCard {...proj} {...index} />;
+          })}
+        </ul>
+      </div>
     </Layout>
   );
 }
