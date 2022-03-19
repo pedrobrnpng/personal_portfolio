@@ -3,6 +3,7 @@ import Head from 'next/head';
 import AboutMe from '../page-components/AboutMe';
 import BuiltProjectsSection from '../page-components/BuiltProjectsSection';
 import ContactSection from '../page-components/ContactSection';
+import ExperienceSection from '../page-components/experience';
 import LandingScreen from '../page-components/LandingScreen';
 
 const Home: NextPage = () => {
@@ -11,9 +12,19 @@ const Home: NextPage = () => {
       <Head>
         <title>Pedro Brandão | Personal Portfolio</title>
       </Head>
+
       <LandingScreen />
-      <AboutMe />
-      <BuiltProjectsSection />
+      <section id="aboutme">
+        <AboutMe />
+      </section>
+      {/* <section id="about">
+        <ExperienceSection />
+      </section> */}
+
+      <section id="work">
+        <BuiltProjectsSection />
+      </section>
+
       <ContactSection />
     </div>
   );
