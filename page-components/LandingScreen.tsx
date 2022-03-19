@@ -1,6 +1,3 @@
-import Image from 'next/image';
-import Link from 'next/link';
-
 import { Illustration } from '../components/illustration';
 import SocialIcons from '../components/social-icons';
 
