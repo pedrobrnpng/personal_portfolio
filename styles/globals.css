@@ -28,4 +28,20 @@ a {
 
 * {
   box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: #ddd78d;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #110624;
+  border-radius: 20px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ddd78d;
+  border-radius: 20px;
 }
