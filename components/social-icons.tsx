@@ -23,28 +23,38 @@ export default function SocialIcons({ vertical }: Props) {
   ];
 
   return (
-    <ul className={`flex ${vertical === true && 'flex-col'}`}>
-      {socials.map(({ Icon, href }, index, key) => (
-        <li key={`social-icon-${key}`}>
-          <Link href={href}>
-            {vertical ? (
-              <Icon
-                className={`${index != 0 && 'mt-1'} ${
-                  index != 2 && 'mb-1'
-                } transition-all hover:cursor-pointer hover:text-brown-beaver`}
-                style={{ fontSize: '32px' }}
-              />
-            ) : (
-              <Icon
-                className={`${index != 0 && 'ml-2'} ${
-                  index != 2 && 'mr-2'
-                } transition-all hover:cursor-pointer hover:text-brown-beaver`}
-                style={{ fontSize: '32px' }}
-              />
-            )}
-          </Link>
-        </li>
-      ))}
+    <ul role="listitem" className={`flex ${vertical === true && 'flex-col'}`}>
+      {socials.map(({ Icon, href }, key) => {
+        if (vertical) {
+          return (
+            <li
+              key={`social-icon-${key}`}
+              className="my-1 first:mt-0 last:mb-0"
+            >
+              <Link href={href} passHref>
+                <Icon
+                  className="my-1 transition-all hover:cursor-pointer hover:text-brown-beaver"
+                  style={{ fontSize: '32px' }}
+                />
+              </Link>
+            </li>
+          );
+        } else {
+          return (
+            <li
+              key={`social-icon-${key}`}
+              className="mx-2 first:ml-0 last:mr-0"
+            >
+              <Link href={href} passHref>
+                <Icon
+                  className="flex transition-all hover:cursor-pointer hover:text-brown-beaver"
+                  style={{ fontSize: '32px' }}
+                />
+              </Link>
+            </li>
+          );
+        }
+      })}
     </ul>
   );
 }
