@@ -4,8 +4,8 @@ export const Illustration = () => {
   return (
     <Image
       src="/Frame.svg"
-      width={500}
-      height={400}
+      width={600}
+      height={500}
       alt="Portrait Illustration"
     />
   );
