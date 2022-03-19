@@ -28,7 +28,7 @@ export default function BuiltProjectsSection() {
   ];
 
   return (
-    <Layout id="work">
+    <Layout id="#work">
       <div className="relative">
         <SectionTitle title="Built Projects" />
         <ul role="list" className="flex flex-col">
