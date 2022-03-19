@@ -2,22 +2,20 @@ import { ProjectData } from '../types/projectdata';
 import { IoLogoGithub } from 'react-icons/io';
 import { AiOutlineLink } from 'react-icons/ai';
 import Link from 'next/link';
-import { link } from 'fs';
 import { LinkIcon } from './LinkIcon';
 import Image from 'next/image';
 
-export default function ProjectCard({
-  type,
-  title,
-  description,
-  tech,
-  github,
-  live,
-  pic,
-}: ProjectData) {
+export default function ProjectCard(
+  { type, title, description, tech, github, live, pic }: ProjectData,
+  index: number
+) {
   const length = tech.length - 1;
   return (
-    <li className="group my-4 flex w-full first:mt-8 last:mb-8 hover:cursor-pointer md:relative md:items-center md:justify-between">
+    <li
+      role="listitem"
+      id={`project-${index}`}
+      className="group my-4 flex w-full first:mt-8 last:mb-8 hover:cursor-pointer md:relative md:items-center md:justify-between"
+    >
       <div className="z-10 w-full md:relative md:order-last">
         <Link href="/project/aasm" passHref>
           <div className="rounded-lg bg-darker-purple px-4 pt-8 pb-4 shadow-lg transition-all hover:shadow-xl md:bg-transparent md:shadow-none md:hover:shadow-none">
