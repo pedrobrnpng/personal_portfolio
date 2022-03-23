@@ -35,7 +35,9 @@ export default function SocialIcons({ vertical }: Props) {
               className="my-1 first:mt-0 last:mb-0"
             >
               <Link href={href} passHref>
-                <Icon className="my-1 text-3xl transition-all hover:cursor-pointer hover:text-brown-beaver md:text-4xl" />
+                <>
+                  <Icon className="my-1 text-3xl transition-all hover:cursor-pointer hover:text-brown-beaver md:text-4xl" />
+                </>
               </Link>
             </li>
           );
@@ -46,7 +48,9 @@ export default function SocialIcons({ vertical }: Props) {
               className="mx-2 first:ml-0 last:mr-0"
             >
               <Link href={href} passHref>
-                <Icon className="flex text-3xl transition-all hover:cursor-pointer hover:text-brown-beaver md:text-4xl" />
+                <>
+                  <Icon className="flex text-3xl transition-all hover:cursor-pointer hover:text-brown-beaver md:text-4xl" />
+                </>
               </Link>
             </li>
           );

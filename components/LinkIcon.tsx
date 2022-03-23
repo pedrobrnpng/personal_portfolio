@@ -9,7 +9,9 @@ export const LinkIcon: React.FC<Props> = (props) => {
   const { Icon, link } = props;
   return (
     <div className="pr-3 text-3xl transition-all hover:cursor-pointer hover:text-brown-beaver">
-      <Link href={link}>{Icon}</Link>
+      <Link href={link}>
+        <>{Icon}</>
+      </Link>
     </div>
   );
 };
