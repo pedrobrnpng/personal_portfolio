@@ -5,6 +5,7 @@ import BuiltProjectsSection from '../page-components/BuiltProjectsSection';
 import ContactSection from '../page-components/ContactSection';
 import ExperienceSection from '../page-components/experience';
 import LandingScreen from '../page-components/LandingScreen';
+import OtherProjects from '../page-components/other-projects';
 
 const Home: NextPage = () => {
   return (
@@ -24,6 +25,10 @@ const Home: NextPage = () => {
 
         <section id="work" className="bg-dark-purple">
           <BuiltProjectsSection />
+        </section>
+
+        <section id="other">
+          <OtherProjects />
         </section>
 
         <section id="contact">
