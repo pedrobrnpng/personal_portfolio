@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Illustration } from '../components/illustration';
 import Layout from '../components/layout';
 import { Paragraph } from '../components/paragraph';
@@ -33,7 +34,15 @@ export default function AboutMe() {
   return (
     <Layout>
       <SectionTitle title="About Me" />
-      <div className="lg:flex lg:flex-row">
+      <div className="lg:flex lg:flex-row lg:items-center">
+        <div className="hidden pr-8 lg:flex">
+          <Image
+            src="/pic.png"
+            width={300}
+            height={300}
+            alt="Portrait Illustration"
+          />
+        </div>
         <div className="lg:w-2/3">
           <Paragraph text={intro} />
           <Paragraph text={interest} />
@@ -41,12 +50,9 @@ export default function AboutMe() {
           <Paragraph text={tech} />
           <ul className="columns-2">
             {technologies.map(({ title }, key) => (
-              <li key={`technology-${key}`}>{title}</li>
+              <li key={`technology-${title}-${key.toString()}`}> - {title}</li>
             ))}
           </ul>
-        </div>
-        <div className="hidden w-1/3 lg:flex">
-          <Illustration />
         </div>
       </div>
     </Layout>
