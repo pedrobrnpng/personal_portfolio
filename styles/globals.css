@@ -9,6 +9,7 @@ body {
   font-family: -apple-system, 'Space Mono', monospace;
   background-color: #221833;
   color: #fff;
+  scroll-behavior: smooth;
 }
 
 ::-moz-selection {
