@@ -8,24 +8,28 @@ import LandingScreen from '../page-components/LandingScreen';
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className="h-max bg-dark-purple">
       <Head>
         <title>Pedro Brandão | Personal Portfolio</title>
       </Head>
 
-      <LandingScreen />
-      <section id="aboutme">
-        <AboutMe />
-      </section>
-      {/* <section id="about">
+      <div className="bg-dark-purple">
+        <LandingScreen />
+        <section id="aboutme" className="bg-dark-purple">
+          <AboutMe />
+        </section>
+        {/* <section id="about">
         <ExperienceSection />
       </section> */}
 
-      <section id="work">
-        <BuiltProjectsSection />
-      </section>
+        <section id="work" className="bg-dark-purple">
+          <BuiltProjectsSection />
+        </section>
 
-      <ContactSection />
+        <section id="contact">
+          <ContactSection />
+        </section>
+      </div>
     </div>
   );
 };
