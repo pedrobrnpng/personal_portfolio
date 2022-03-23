@@ -9,7 +9,7 @@ export default function BuiltProjectsSection() {
       type: 'Featured Project',
       title: 'AASM Furniture',
       description:
-        'A Web app for the company’s clients to visualize the collections available. It has authentication to limit the visibility to only people that work with the company, in order to prevent copying of ideas. Also works as a way to get to know the company better.',
+        'A Web app for the company’silable. It has authentication to limit the visibility to only people that work with the company, in order to prevent copying of ideas. Also works as a way to get to know the company better.',
       tech: ['Next.js', 'Prismic', 'NextAuth', 'Vercel', 'MongoDB'],
       github: 'https://www.github.com/pedrobrnpng/aasm-moveis',
       live: 'https://www.aasm-furniture.com',
@@ -19,7 +19,7 @@ export default function BuiltProjectsSection() {
       type: 'Featured Project',
       title: 'AASM Furniture',
       description:
-        'A Web app for the company’s clients to visualize the collections available. It has authentication to limit the visibility to only people that work with the company, in order to prevent copying of ideas. Also works as a way to get to know the company better.',
+        'A Web app for the compans available. It has authentication to limit the visibility to only people that work with the company, in order to prevent copying of ideas. Also works as a way to get to know the company better.',
       tech: ['Next.js', 'Prismic', 'NextAuth', 'Vercel', 'MongoDB'],
       github: 'https://www.github.com/pedrobrnpng/aasm-moveis',
       live: 'https://www.aasm-furniture.com',
