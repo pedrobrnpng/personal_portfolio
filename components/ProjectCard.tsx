@@ -13,12 +13,12 @@ export default function ProjectCard(
   return (
     <li
       role="listitem"
-      id={`project-${index}`}
+      key={`project-${title}-${index}`}
       className="group my-4 flex w-full first:mt-8 last:mb-8 hover:cursor-pointer md:relative md:items-center md:justify-between"
     >
-      <div className="z-10 w-full md:relative md:order-last">
+      <div className="z-10 flex md:relative">
         <Link href="/project/aasm" passHref>
-          <div className="rounded-lg bg-darker-purple px-4 pt-8 pb-4 shadow-lg transition-all hover:shadow-xl md:bg-transparent md:shadow-none md:hover:shadow-none">
+          <div className="rounded-lg bg-darker-purple px-6 pt-8 pb-4 shadow-lg transition-all hover:shadow-xl md:bg-transparent md:shadow-none md:hover:shadow-none">
             <h1 className="font-bold text-brown-beaver ">{type} </h1>
             <h2 className="md:group-hover:text-whitegroup-hover:text-brown-beaver font-league text-3xl font-bold transition-all md:pb-4">
               {title}
@@ -31,7 +31,7 @@ export default function ProjectCard(
                 return (
                   <li
                     role="listitem"
-                    key={`technology-${key}`}
+                    key={`technology-${e}-${key}`}
                     className="inline px-2 text-brown-beaver first:pl-0 last:pr-0"
                   >
                     {e} {index < length && '-'}
@@ -46,7 +46,7 @@ export default function ProjectCard(
           </div>
         </Link>
       </div>
-      <div className="right-0 hidden brightness-50 transition-all group-hover:brightness-100 md:absolute md:order-first md:flex">
+      <div className="right-0 hidden brightness-50 transition-all group-hover:brightness-100 md:absolute md:flex">
         <Image src={pic} width={530} height={360} alt={`image-${pic}`} />
       </div>
     </li>
