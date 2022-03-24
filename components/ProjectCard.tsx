@@ -16,14 +16,14 @@ export default function ProjectCard(
     <li
       role="listitem"
       key={`project-${title}-${index}`}
-      className="group my-4 flex w-full first:mt-8 last:mb-8 hover:cursor-pointer md:relative md:items-center md:justify-between"
+      className="group my-4 flex w-full transition-all duration-200 first:mt-8 last:mb-8 hover:-translate-y-1 hover:cursor-pointer md:relative md:items-center md:justify-between md:hover:translate-y-0"
     >
       <div className="z-10 flex md:relative">
         <Link href={live} passHref>
           <a>
             <div className="rounded-lg bg-darker-purple px-6 pt-8 pb-4 shadow-lg transition-all hover:shadow-xl md:bg-transparent md:shadow-none md:hover:shadow-none">
               <h1 className="font-bold text-brown-beaver ">{type} </h1>
-              <h2 className="md:group-hover:text-whitegroup-hover:text-brown-beaver font-league text-3xl font-bold transition-all md:pb-4">
+              <h2 className="font-league text-3xl font-bold transition-all group-hover:text-brown-beaver md:pb-4 md:group-hover:text-white">
                 {title}
               </h2>
               <p className="rounded-lg bg-darker-purple py-4 md:mt-2 md:mb-4 md:max-w-md md:px-6">
