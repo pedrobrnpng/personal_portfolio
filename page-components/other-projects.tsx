@@ -7,64 +7,55 @@ import { ProjectData } from '../types/projectdata';
 export default function OtherProjects() {
   const data: ProjectData[] = [
     {
-      type: 'Featured Project',
-      title: 'AASM Furniture',
+      title: 'Blender Items Exporter',
       description:
-        'A Web app for the with the company, in order to prevent copying of ideas. Also works as a way to get to know the company better.',
-      tech: ['Next.js', 'Prismic', 'NextAuth', 'Vercel', 'MongoDB'],
+        'A blender script that exports the selected items and it’s dimensions to a .CSV file.',
+      tech: ['Python', 'Blender API'],
       github: 'https://www.github.com/pedrobrnpng/aasm-moveis',
-      live: 'https://www.aasm-furniture.com',
       pic: '/aasm_print.jpg',
     },
     {
-      type: 'Featured Project',
-      title: 'AASM Furniture',
+      title: 'Transport Management and Planning',
       description:
-        'A Web app for theas. Also works as a way to get to know the company better.',
-      tech: ['Next.js', 'Prismic', 'NextAuth', 'Vercel', 'MongoDB'],
+        'A university group project where a Java application was built to manage a network of parks and vehicles, that can be rented via the app.',
+      tech: [
+        'Angular',
+        'C#',
+        'Prolog',
+        'Typescript',
+        'MongoDB',
+        'Azure DB',
+        'OOP',
+      ],
       github: 'https://www.github.com/pedrobrnpng/aasm-moveis',
-      live: 'https://www.aasm-furniture.com',
-      pic: '/aasm_print.jpg',
     },
     {
-      type: 'Featured Project',
-      title: 'AASM Furniture',
+      title: 'Ride Sharing App',
       description:
-        'A Web app for to only people that work with the company, in order to prevent copying of ideas. Also works as a way to get to know the company better.',
-      tech: ['Next.js', 'Prismic', 'NextAuth', 'Vercel', 'MongoDB'],
+        'A university group project where a Java application was built to manage a network of parks and vehicles, that can be rented via the app.',
+      tech: ['Java', 'Oracle DB', 'Maven', 'OOP'],
       github: 'https://www.github.com/pedrobrnpng/aasm-moveis',
-      live: 'https://www.aasm-furniture.com',
-      pic: '/aasm_print.jpg',
     },
     {
-      type: 'Featured Project',
-      title: 'AASM Furniture',
+      title: 'Factory Floor Management',
       description:
         'A Web app for the companys ly people that work with the company, in order to prevent coks as a way to get to know the company better.',
       tech: ['Next.js', 'Prismic', 'NextAuth', 'Vercel', 'MongoDB'],
       github: 'https://www.github.com/pedrobrnpng/aasm-moveis',
-      live: 'https://www.aasm-furniture.com',
-      pic: '/aasm_print.jpg',
     },
     {
-      type: 'Featured Project',
-      title: 'AASM Furniture',
+      title: 'Photo Organizer',
       description:
-        'A Web app for the company’s clients  peoompany, in order to prevent copying of ideas. Also works as a way to get to know the company better.',
-      tech: ['Next.js', 'Prismic', 'NextAuth', 'Vercel', 'MongoDB'],
+        'A python script built to organize the mess of folders provided by the download of your photo data from Google Photos.',
+      tech: ['Python'],
       github: 'https://www.github.com/pedrobrnpng/aasm-moveis',
-      live: 'https://www.aasm-furniture.com',
-      pic: '/aasm_print.jpg',
     },
     {
-      type: 'Featured Project',
-      title: 'AASM Furniture',
+      title: 'Arduino LED Morse translator',
       description:
-        'A Web app for the company’s clients totion to limit the vismpany, in order to prevent copying of ideas. Also works as a way to get to know the company better.',
-      tech: ['Next.js', 'Prismic', 'NextAuth', 'Vercel', 'MongoDB'],
+        'An Arduino program built to translate text into Morse, using the built-in LED of the Arduino Board.',
+      tech: ['Arduino'],
       github: 'https://www.github.com/pedrobrnpng/aasm-moveis',
-      live: 'https://www.aasm-furniture.com',
-      pic: '/aasm_print.jpg',
     },
   ];
 

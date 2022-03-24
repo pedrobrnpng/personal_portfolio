@@ -10,6 +10,8 @@ export default function ProjectCard(
   index: number
 ) {
   const length = tech.length - 1;
+  if (!live) live = '';
+  if (!pic) pic = '';
   return (
     <li
       role="listitem"
@@ -17,33 +19,35 @@ export default function ProjectCard(
       className="group my-4 flex w-full first:mt-8 last:mb-8 hover:cursor-pointer md:relative md:items-center md:justify-between"
     >
       <div className="z-10 flex md:relative">
-        <Link href="/project/aasm" passHref>
-          <div className="rounded-lg bg-darker-purple px-6 pt-8 pb-4 shadow-lg transition-all hover:shadow-xl md:bg-transparent md:shadow-none md:hover:shadow-none">
-            <h1 className="font-bold text-brown-beaver ">{type} </h1>
-            <h2 className="md:group-hover:text-whitegroup-hover:text-brown-beaver font-league text-3xl font-bold transition-all md:pb-4">
-              {title}
-            </h2>
-            <p className="rounded-lg bg-darker-purple py-4 md:mt-2 md:mb-4 md:max-w-md md:px-6">
-              {description}
-            </p>
-            <ul role="list" className="inline py-2">
-              {tech.map((e, index, key) => {
-                return (
-                  <li
-                    role="listitem"
-                    key={`technology-${e}-${key}`}
-                    className="inline px-2 text-brown-beaver first:pl-0 last:pr-0"
-                  >
-                    {e} {index < length && '-'}
-                  </li>
-                );
-              })}
-            </ul>
-            <div className="bottom-0 flex pt-4 pb-2">
-              <LinkIcon Icon={<IoLogoGithub />} link={github} />
-              <LinkIcon Icon={<AiOutlineLink />} link={live} />
+        <Link href={live} passHref>
+          <a>
+            <div className="rounded-lg bg-darker-purple px-6 pt-8 pb-4 shadow-lg transition-all hover:shadow-xl md:bg-transparent md:shadow-none md:hover:shadow-none">
+              <h1 className="font-bold text-brown-beaver ">{type} </h1>
+              <h2 className="md:group-hover:text-whitegroup-hover:text-brown-beaver font-league text-3xl font-bold transition-all md:pb-4">
+                {title}
+              </h2>
+              <p className="rounded-lg bg-darker-purple py-4 md:mt-2 md:mb-4 md:max-w-md md:px-6">
+                {description}
+              </p>
+              <ul role="list" className="inline py-2">
+                {tech.map((e, index, key) => {
+                  return (
+                    <li
+                      role="listitem"
+                      key={`technology-${e}-${key}`}
+                      className="inline px-2 text-brown-beaver first:pl-0 last:pr-0"
+                    >
+                      {e} {index < length && '-'}
+                    </li>
+                  );
+                })}
+              </ul>
+              <div className="bottom-0 flex pt-4 pb-2">
+                <LinkIcon Icon={<IoLogoGithub />} link={github} />
+                <LinkIcon Icon={<AiOutlineLink />} link={live} />
+              </div>
             </div>
-          </div>
+          </a>
         </Link>
       </div>
       <div className="right-0 hidden brightness-50 transition-all group-hover:brightness-100 md:absolute md:flex">

@@ -48,9 +48,11 @@ export default function AboutMe() {
           <Paragraph text={interest} />
           <Paragraph text={privilege} />
           <Paragraph text={tech} />
-          <ul className="columns-2">
+          <ul className="customList columns-2">
             {technologies.map(({ title }, key) => (
-              <li key={`technology-${title}-${key.toString()}`}> - {title}</li>
+              <li key={`technology-${title}-${key.toString()}`}>
+                {` ${title}`}
+              </li>
             ))}
           </ul>
         </div>

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { IoLogoLinkedin, IoLogoGithub } from 'react-icons/io';
 import { MdOutlineEmail } from 'react-icons/md';
+import { LinkIcon } from './LinkIcon';
 
 interface Props {
   vertical: boolean;
@@ -34,11 +35,7 @@ export default function SocialIcons({ vertical }: Props) {
               key={`social-icon-${key}`}
               className="my-1 first:mt-0 last:mb-0"
             >
-              <Link href={href} passHref>
-                <>
-                  <Icon className="my-1 text-3xl transition-all hover:cursor-pointer hover:text-brown-beaver md:text-4xl" />
-                </>
-              </Link>
+              <LinkIcon Icon={<Icon />} link={href} />
             </li>
           );
         } else {
@@ -47,11 +44,7 @@ export default function SocialIcons({ vertical }: Props) {
               key={`social-icon-${key}`}
               className="mx-2 first:ml-0 last:mr-0"
             >
-              <Link href={href} passHref>
-                <>
-                  <Icon className="flex text-3xl transition-all hover:cursor-pointer hover:text-brown-beaver md:text-4xl" />
-                </>
-              </Link>
+              <LinkIcon Icon={<Icon />} link={href} />
             </li>
           );
         }

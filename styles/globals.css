@@ -46,3 +46,9 @@ a {
   background-color: #ddd78d;
   border-radius: 20px;
 }
+
+.customList li::before {
+  content: "▹";
+  color: #C59176;
+
+}
