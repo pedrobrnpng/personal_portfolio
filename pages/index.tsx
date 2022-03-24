@@ -3,7 +3,6 @@ import Head from 'next/head';
 import AboutMe from '../page-components/AboutMe';
 import BuiltProjectsSection from '../page-components/BuiltProjectsSection';
 import ContactSection from '../page-components/ContactSection';
-import ExperienceSection from '../page-components/experience';
 import LandingScreen from '../page-components/LandingScreen';
 import OtherProjects from '../page-components/other-projects';
 
@@ -16,12 +15,10 @@ const Home: NextPage = () => {
 
       <div className="bg-dark-purple">
         <LandingScreen />
+
         <section id="aboutme" className="bg-dark-purple">
           <AboutMe />
         </section>
-        {/* <section id="about">
-        <ExperienceSection />
-      </section> */}
 
         <section id="work" className="bg-dark-purple">
           <BuiltProjectsSection />
