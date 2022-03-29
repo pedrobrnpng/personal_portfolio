@@ -4,13 +4,14 @@ import { Paragraph } from '../components/paragraph';
 import SectionTitle from '../components/section-title';
 
 export default function AboutMe() {
-  const intro =
-    'Hi! I’m Pedro and I enjoy creating things, mostly the ones that live on the internet. ';
-  const interest =
-    'My interest in Web Development started in 2020 when I had to do an assignment for university that involved creating a Single Page Application. Messing with visual elements while coding really clicked with me, and made me realize that this is what I wanted for my carreer.';
-  const privilege =
-    'I’ve had the privilege to work as an intern in a successfull start-up. These days my focus has been developing custom Web Apps as a freelancer, and some other cool tools, while deepening my capabilites.';
-  const tech = 'Here are some technologies that I’ve been using lately:';
+  const intro = `
+  Hi! I’m Pedro and I enjoy creating things, mostly the ones that live on the internet. 
+    
+  My interest in Web  Development started in 2020 when I had to do an assignment for university that involved creating a Single Page Application. Messing with visual elements while coding really clicked with me, and made me realize that this is what I wanted for my carreer.
+    
+  I’ve had the privilege  to work as an intern in a [successfull start-up](https://www.smartex.ai). These days my focus has been developing custom Web Apps as a freelancer, and some other cool tools, while deepening my capabilites.
+    
+  Here are some  technologies that I’ve been using lately:`;
 
   const technologies = [
     {
@@ -44,9 +45,6 @@ export default function AboutMe() {
         </div>
         <div className="lg:w-2/3">
           <Paragraph text={intro} />
-          <Paragraph text={interest} />
-          <Paragraph text={privilege} />
-          <Paragraph text={tech} />
           <ul className="customList columns-2">
             {technologies.map(({ title }, key) => (
               <li key={`technology-${title}-${key.toString()}`}>
