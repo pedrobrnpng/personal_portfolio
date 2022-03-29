@@ -35,7 +35,7 @@ export const ProjectCard: React.FC<Props> = (props) => {
             }`}
           >
             <h1 className="font-bold text-brown-beaver ">{type} </h1>
-            <h2 className="font-league text-3xl font-bold transition-all group-hover:text-brown-beaver md:pb-4 md:group-hover:text-white">
+            <h2 className="font-league text-3xl font-bold tracking-widest transition-all group-hover:text-brown-beaver md:pb-4 md:group-hover:text-white">
               {title}
             </h2>
             <p className="rounded-lg bg-darker-purple py-4 text-left shadow-lg transition-all hover:shadow-xl md:mt-2 md:mb-4 md:max-w-md md:px-6">
