@@ -3,7 +3,7 @@ import Link from 'next/link';
 interface Props {
   link: string;
   Icon: React.ReactNode;
-  odd: number;
+  odd?: number;
 }
 
 export const LinkIcon: React.FC<Props> = (props) => {
