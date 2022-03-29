@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { Illustration } from '../components/illustration';
 import Layout from '../components/layout';
 import { Paragraph } from '../components/paragraph';
 import SectionTitle from '../components/section-title';

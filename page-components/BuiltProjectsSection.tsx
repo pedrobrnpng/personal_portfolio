@@ -1,5 +1,5 @@
 import Layout from '../components/layout';
-import ProjectCard from '../components/ProjectCard';
+import { ProjectCard } from '../components/ProjectCard';
 import SectionTitle from '../components/section-title';
 import { ProjectData } from '../types/projectdata';
 
@@ -33,7 +33,7 @@ export default function BuiltProjectsSection() {
         <SectionTitle title="Built Projects" />
         <ul role="list" className="flex flex-col">
           {data.map((proj, index) => {
-            return <ProjectCard {...proj} {...index} />;
+            return <ProjectCard project={proj} index={index} />;
           })}
         </ul>
       </div>
