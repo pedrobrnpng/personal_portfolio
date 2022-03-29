@@ -1,6 +1,5 @@
 import Layout from '../components/layout';
 import OtherProjectCard from '../components/OtherProjectsCard';
-import ProjectCard from '../components/ProjectCard';
 import SectionTitle from '../components/section-title';
 import { ProjectData } from '../types/projectdata';
 
@@ -18,15 +17,7 @@ export default function OtherProjects() {
       title: 'Transport Management and Planning',
       description:
         'A university group project where a Java application was built to manage a network of parks and vehicles, that can be rented via the app.',
-      tech: [
-        'Angular',
-        'C#',
-        'Prolog',
-        'Typescript',
-        'MongoDB',
-        'Azure DB',
-        'OOP',
-      ],
+      tech: ['Angular', 'C#', 'Prolog', 'MongoDB', 'Azure DB', 'OOP'],
       github: 'https://www.github.com/pedrobrnpng/aasm-moveis',
     },
     {
