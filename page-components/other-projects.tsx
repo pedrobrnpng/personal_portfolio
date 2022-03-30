@@ -10,7 +10,7 @@ export default function OtherProjects() {
       description:
         'A blender script that exports the selected items and it’s dimensions to a .CSV file.',
       tech: ['Python', 'Blender API'],
-      github: 'https://www.github.com/pedrobrnpng/aasm-moveis',
+      github: 'https://github.com/pedrobrnpng/export_items_blender',
       pic: '/aasm_print.jpg',
     },
     {
@@ -18,35 +18,37 @@ export default function OtherProjects() {
       description:
         'A university group project where a Java application was built to manage a network of parks and vehicles, that can be rented via the app.',
       tech: ['Angular', 'C#', 'Prolog', 'MongoDB', 'Azure DB', 'OOP'],
-      github: 'https://www.github.com/pedrobrnpng/aasm-moveis',
+      github:
+        'https://github.com/pedrobrnpng/transport_management_planning_lapr5',
     },
     {
       title: 'Ride Sharing App',
       description:
         'A university group project where a Java application was built to manage a network of parks and vehicles, that can be rented via the app.',
       tech: ['Java', 'Oracle DB', 'Maven', 'OOP'],
-      github: 'https://www.github.com/pedrobrnpng/aasm-moveis',
+      github: 'https://github.com/pedrobrnpng/ride-sharing-app-isep-lapr3',
     },
     {
       title: 'Factory Floor Management',
       description:
         'A Web app for the companys ly people that work with the company, in order to prevent coks as a way to get to know the company better.',
       tech: ['Next.js', 'Prismic', 'NextAuth', 'Vercel', 'MongoDB'],
-      github: 'https://www.github.com/pedrobrnpng/aasm-moveis',
+      github:
+        'https://github.com/pedrobrnpng/factory-floor-management-isep-lapr4',
     },
     {
       title: 'Photo Organizer',
       description:
         'A python script built to organize the mess of folders provided by the download of your photo data from Google Photos.',
       tech: ['Python'],
-      github: 'https://www.github.com/pedrobrnpng/aasm-moveis',
+      github: 'https://github.com/pedrobrnpng/photo_organizer',
     },
     {
       title: 'Arduino LED Morse translator',
       description:
         'An Arduino program built to translate text into Morse, using the built-in LED of the Arduino Board.',
       tech: ['Arduino'],
-      github: 'https://www.github.com/pedrobrnpng/aasm-moveis',
+      github: 'https://github.com/pedrobrnpng/Arduino_LED_Morse',
     },
   ];
 
