@@ -11,6 +11,7 @@ export default function BuiltProjectsSection() {
       description:
         "A Web app for the company's clients be able to see their products. It has authentication to limit the visibility to only people that work with the company, in order to prevent copying of ideas. Also works as a way to get to know the company better.",
       tech: ['Next.js', 'Prismic', 'NextAuth', 'Vercel', 'MongoDB'],
+      github: '',
       live: 'https://www.aasm-furniture.com',
       pic: '/aasm_print.jpg',
     },

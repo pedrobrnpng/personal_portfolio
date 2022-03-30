@@ -14,14 +14,17 @@ export default function OtherProjectCard({
   if (!live) live = '';
   return (
     <div className="group relative max-h-min min-h-fit rounded-md bg-darker-purple px-6 pt-8 pb-16 shadow-lg transition-all hover:-translate-y-1 hover:cursor-pointer hover:shadow-xl">
-      <Link href={github}>
+      <Link href={github || ''}>
         <a>
           <div className="flex items-center justify-between pb-4">
             <AiOutlineFolder className="text-6xl text-brown-beaver" />
             <ul className="list-none">
               {github != '' && (
                 <li className="inline-flex">
-                  <LinkIcon link={github} Icon={<RiGithubLine />}></LinkIcon>
+                  <LinkIcon
+                    link={github || ''}
+                    Icon={<RiGithubLine />}
+                  ></LinkIcon>
                 </li>
               )}
               {live != '' && (
