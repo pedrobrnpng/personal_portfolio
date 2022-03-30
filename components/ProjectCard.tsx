@@ -15,6 +15,7 @@ export const ProjectCard: React.FC<Props> = (props) => {
   let { type, title, description, tech, github, live, pic } = project;
   const length = tech.length - 1;
 
+  if (!github) github = '';
   if (!live) live = '';
   if (!pic) pic = '';
 
@@ -59,8 +60,13 @@ export const ProjectCard: React.FC<Props> = (props) => {
                 odd == 1 && 'md:justify-end'
               }`}
             >
-              <LinkIcon Icon={<IoLogoGithub />} link={github} odd={odd} />
-              <LinkIcon Icon={<AiOutlineLink />} link={live} odd={odd} />
+              {github != '' && (
+                <LinkIcon Icon={<IoLogoGithub />} link={github} odd={odd} />
+              )}
+
+              {live != '' && (
+                <LinkIcon Icon={<AiOutlineLink />} link={live} odd={odd} />
+              )}
             </div>
           </div>
           <div

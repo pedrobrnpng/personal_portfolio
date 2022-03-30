@@ -3,7 +3,7 @@ export type ProjectData = {
   title: string;
   description: string;
   tech: string[];
-  github: string;
+  github?: string;
   live?: string;
   pic?: string;
 }
