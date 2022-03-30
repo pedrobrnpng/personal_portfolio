@@ -17,7 +17,7 @@ export default function LandingScreen() {
             Pedro <br /> Brandão<b className="text-brown-beaver">.</b>
           </h1>
           <hr className="w-1/3 border-t-4 border-brown-beaver pt-2 pb-1" />
-          <h3 className="pt-2 text-2xl md:text-4xl">Frontend Developer</h3>
+          <h3 className="pt-2 text-2xl md:text-4xl">Web Developer</h3>
           <SocialIcons vertical={false} />
         </div>
       </div>
