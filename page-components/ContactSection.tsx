@@ -15,12 +15,13 @@ export default function ContactSection() {
             Want to work with me?
           </h5>
           <p className="pt-4 pb-2">
-            Send me an email at{' '}
+            Send me an email at
             <a
               className="underline hover:text-brown-beaver"
-              href="mailto:hello@pedro.codes"
+              href="mailto:dev.pedrobrandao@gmail.com"
             >
-              hello@pedro.codes
+              {' '}
+              dev.pedrobrandao@gmail.com
             </a>{' '}
             you can also contact me on social media
           </p>
