@@ -18,10 +18,10 @@ export default function ContactSection() {
             Send me an email at
             <a
               className="underline hover:text-brown-beaver"
-              href="mailto:dev.pedrobrandao@gmail.com"
+              href="mailto:hello@dev-pedrobrandao.com"
             >
               {' '}
-              dev.pedrobrandao@gmail.com
+              hello@dev-pedrobrandao.com
             </a>{' '}
             you can also contact me on social media
           </p>
