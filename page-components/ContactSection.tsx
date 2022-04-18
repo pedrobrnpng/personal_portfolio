@@ -15,19 +15,18 @@ export default function ContactSection() {
             Want to work with me?
           </h5>
           <p className="pt-4 pb-2">
-            Send me an email at
+            Send me an{' '}
             <a
               className="underline hover:text-brown-beaver"
               href="mailto:hello@dev-pedrobrandao.com"
             >
-              {' '}
-              hello@dev-pedrobrandao.com
+              email
             </a>{' '}
-            you can also contact me on social media
+            or you can also contact me on social media
           </p>
           <SocialIcons vertical={false} />
           <p className="pt-6 pb-2">Feel free to check my Curriculum as well</p>
-          <LinkIcon Icon={<AiOutlineLink />} link={'live'} />
+          <LinkIcon Icon={<AiOutlineLink />} link={'/CV_Pedro_Brandao.pdf'} />
         </div>
         <div>
           <Illustration />

@@ -15,7 +15,7 @@ export default function SocialIcons({ vertical }: Props) {
     },
     {
       Icon: MdOutlineEmail,
-      href: 'mailto:dev.pedrobrandao@gmail.com',
+      href: 'mailto:hello@dev-pedrobrandao.com',
     },
     {
       Icon: IoLogoLinkedin,
