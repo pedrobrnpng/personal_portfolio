@@ -7,7 +7,7 @@ export default function AboutMe() {
   const intro = `
   Hi! I’m Pedro and I enjoy creating things, mostly the ones that live on the internet. 
     
-  My interest in Web  Development started in 2020 when I had to do an assignment for university that involved creating a Single Page Application. Messing with visual elements while coding really clicked with me, and made me realize that this is what I wanted for my carreer.
+  My interest in Web  Development started in 2020 when I had to do an assignment for university that involved creating a Single Page Application. Messing with visual elements while coding really clicked with me, and made me realize that this is what I wanted for my career.
     
   I’ve had the privilege  to work as an intern in a [successfull start-up](https://www.smartex.ai). These days my focus has been developing custom Web Apps as a freelancer, and some other cool tools, while deepening my capabilites.
     
