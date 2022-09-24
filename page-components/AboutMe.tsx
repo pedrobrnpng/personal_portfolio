@@ -7,15 +7,15 @@ export default function AboutMe() {
   const intro = `
   Hi! I’m Pedro and I enjoy creating things, mostly the ones that live on the internet. 
     
-  My interest in Web  Development started in 2020 when I had to do an assignment for university that involved creating a Single Page Application. Messing with visual elements while coding really clicked with me, and made me realize that this is what I wanted for my career.
-    
-  I’ve had the privilege  to work as an intern in a [successfull start-up](https://www.smartex.ai). These days my focus has been developing custom Web Apps as a freelancer, and some other cool tools, while deepening my capabilites.
-    
-  Here are some  technologies that I’ve been using lately:`;
+  My interest in Web Development started in 2020 when I had to do an assignment for university that involved creating a Single Page Application. Messing with visual elements while coding really clicked with me, and made me realize that this is what I wanted for my career.
+  
+  These days, I work as a Full-Stack Developer @[Pixelmatters](https://www.pixelmatters.com) building cool web applications, while deepening my capabilities.
+  
+  Here are some technologies that I’ve been using lately:`;
 
   const technologies = [
     {
-      title: 'Node.js',
+      title: 'NestJS',
     },
     {
       title: 'React',
@@ -24,7 +24,7 @@ export default function AboutMe() {
       title: 'Typescript',
     },
     {
-      title: 'Prismic',
+      title: 'PostgreSQL',
     },
     {
       title: 'MongoDB',

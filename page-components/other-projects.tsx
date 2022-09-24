@@ -16,7 +16,7 @@ export default function OtherProjects() {
     {
       title: 'Transport Management and Planning',
       description:
-        'A university group project where a Java application was built to manage a network of parks and vehicles, that can be rented via the app.',
+        'A university group project that mimics a transportation company. Uses AI to find the best route for a given trip, and also is able to manage vehicles.',
       tech: ['Angular', 'C#', 'Prolog', 'MongoDB', 'Azure DB', 'OOP'],
       github:
         'https://github.com/pedrobrnpng/transport_management_planning_lapr5',
@@ -31,7 +31,7 @@ export default function OtherProjects() {
     {
       title: 'Factory Floor Management',
       description:
-        'A Web app for the companys ly people that work with the company, in order to prevent coks as a way to get to know the company better.',
+        'A university group project that allows to manage a production line of a factory floor. From controling stock to machine monitoring.',
       tech: ['Next.js', 'Prismic', 'NextAuth', 'Vercel', 'MongoDB'],
       github:
         'https://github.com/pedrobrnpng/factory-floor-management-isep-lapr4',
